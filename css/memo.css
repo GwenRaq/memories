@@ -1,39 +1,15 @@
 
-.box {
-    flex-wrap: wrap;
+#first, #second{
+    flex-wrap: nowrap;
     display: flex;
-    justify-content: space-around;
-    width: 600px;
-    height: 510px;
-    background-color: lightpink;
+    justify-content: center;
+    width: 1300px;
+    height: 200px;
 }
 
-.one{
+.one, .two{
 	background-color: lightblue;
     width: 120px;
     height: 150px;
     margin: 10px 10px;
-}
-.flip-container{
-	width: 320px;
-	height: 480px;
-}
-.flip-container:hover #flipper, .flip-container.hover #flipper {
-	transform: rotateY(180deg);
-}
-
-.one, .two {
-	backface-visibility: hidden;
-}
-#flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-}
-.one {
-	z-index: 2;
-	transform: rotateY(0deg);
-}
-
-.two {
-	transform: rotateY(180deg);
 }
