@@ -1,6 +1,4 @@
-header{
-	float-left:43%;
-}
+
 .first{
     display: flex;
     justify-content: center;
@@ -13,18 +11,30 @@ header{
     margin: 30px;
 }
 
+.one{
+  transition: 0.5s;
+  transform-style: preserve-3d;
+
+}
+
 .front, .back{
+  backface-visibility: hidden;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
 }
 
 .front{
-	backface-visibility: hidden;
-	background-color: 
+  border-radius: 5px;
+  width: 140px;
+	background-color: lightblue;
+  backface-visibility: hidden;  
+  transform: rotateY(180deg);
 
 }
 .back{
-	backface-visibility: hidden;
-	background-image: url(../assets/cardback_37.gif);
+  background-size: contain;
+  background-position: center;
+  backface-visibility: hidden;
+  background-image: url(../assets/lol.gif);
 }
