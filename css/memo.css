@@ -1,15 +1,30 @@
-
-#first, #second{
-    flex-wrap: nowrap;
+header{
+	float-left:43%;
+}
+.first{
     display: flex;
     justify-content: center;
-    width: 1300px;
-    height: 200px;
+    flex-wrap: nowrap;
 }
 
-.one, .two{
-	background-color: lightblue;
-    width: 120px;
-    height: 150px;
-    margin: 10px 10px;
+.one, .front,.back{
+    width: 160px;
+    height: 200px;
+    margin: 30px;
+}
+
+.front, .back{
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.front{
+	backface-visibility: hidden;
+	background-color: 
+
+}
+.back{
+	backface-visibility: hidden;
+	background-image: url(../assets/cardback_37.gif);
 }
