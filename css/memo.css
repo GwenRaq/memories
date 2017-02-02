@@ -1,3 +1,6 @@
+h1{
+  float-left:50%;
+}
 
 .first{
     display: flex;
@@ -27,7 +30,7 @@
 .front{
   border-radius: 5px;
   width: 140px;
-	background-color: lightblue;
+	background-color: lightpink;
   backface-visibility: hidden;  
   transform: rotateY(180deg);
 
