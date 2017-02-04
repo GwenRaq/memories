@@ -8,15 +8,3 @@ function flip(clicked_id) {
     },1000);
   }
 }
-List<Card> shuffled = new ArrayList<Card>();
-shuffled.addAll(allCards);
-
-Random random = new Random();
-for (int i = shuffled.size() - 1; i >= 0; i--) {
-    int j = random.nextInt(i + 1);
-
-    /* swap cards i,j */
-    Card card = shuffled.get(i);
-    shuffled.set(i, shuffled.get(j));
-    shufflet.set(j, card);
-}
