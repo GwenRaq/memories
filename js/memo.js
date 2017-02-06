@@ -8,15 +8,14 @@ function flip(clicked_id) {
     },1000);
   }
 }
-List<Card> shuffled = new ArrayList<Card>();
-shuffled.addAll(allCards);
 
-Random random = new Random();
-for (int i = shuffled.size() - 1; i >= 0; i--) {
-    int j = random.nextInt(i + 1);
+var images = ["a","b", "c", "d","e","f","g","h"];
 
-    /* swap cards i,j */
-    Card card = shuffled.get(i);
-    shuffled.set(i, shuffled.get(j));
-    shufflet.set(j, card);
+// get images, place them in an array & randomize the order
+for (var i = 0; i < 8; i++) { 
+  var rand = Math.floor(Math.random() * (1200 - 900 + 1) + 900); 
+  var img = '../memories/assets/card' + rand + '.jpg';
+  images.push(img);
+  images.push(img);
 }
+randomizeImages();
