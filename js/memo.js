@@ -9,13 +9,15 @@ function flip(clicked_id) {
   }
 }
 
-var images = ["a","b", "c", "d","e","f","g","h"];
+// var images = ["a","b", "c", "d","e","f","g","h"];
 
 // get images, place them in an array & randomize the order
-for (var i = 0; i < 8; i++) { 
-  var rand = Math.floor(Math.random() * (1200 - 900 + 1) + 900); 
-  var img = '../memories/assets/card' + rand + '.jpg';
-  images.push(img);
-  images.push(img);
-}
-randomizeImages();
+// for (var i = 0; i < 8; i++) { 
+//   var rand = Math.floor(Math.random() * (pic.length));
+//   var img = '../memories/assets/card' + rand + '.png';
+//   document.getElementsByClassName("front")[i].style.backgroundImage = "url('./memories/assets/card"+ rand +".png')";
+//   images.push(img);
+//   images.push(img);
+// }
+// randomizeImages();
+
