@@ -21,12 +21,12 @@ function randomizer() {
 	}
 randomizer();
 
-function flip(clicked_id) {
-	var j = document.getElementById(clicked_id);
+function flip(idName) {
+	var j = document.getElementById(idName);
  	j.style.transform = 'rotateY(180deg)';
 	var idMatch = showBack.getElementsByClassName("back")[0].id;
   	if(rotationQueue.length < 2){
-    	rotationQueue.push(clicked_id); 
+    	rotationQueue.push(idName); 
     	picQueue.push(idMatch); 
 //look up how to access id within div
   } 
