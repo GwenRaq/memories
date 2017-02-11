@@ -1,9 +1,11 @@
-
 var ids = ["a","b","c","d","e","f","g","h"];
 var pics = [1,1,2,2,3,3,4,4];
 var i;
+var rotationQueue = [];
+var picQueue = [];
 
 function randomizer() {
+	console.log("k");
   for (i = 0; i < 8; i++){  
 		var randomNum = Math.floor(Math.random()*(pics.length));
 		var setImg = document.getElementsByClassName("back")[i];
@@ -16,6 +18,7 @@ function randomizer() {
 		}
 		cardPics.splice(randomNum, 1);
 	}
+randomizer();
 
 function flip(clicked_id) {
 	var j = document.getElementById(clicked_id);
@@ -27,19 +30,3 @@ function flip(clicked_id) {
 //look up how to access id within div
   } 
 console.log(x);
-}
-
-
-// function flip(idName) {
-//   var showBack = document.getElementById(idName);
-//   showBack.style.transform = "rotateY(180deg)";
- 
-
-//   //checks if two cards are flipped   
-//   var idMatch = showBack.getElementsByClassName("back")[0].id;
-//   if(rotationQueue.length < 2){
-//     rotationQueue.push(idName); 
-//     picQueue.push(idMatch); 
-//     //^ after seeing that pic ids are sam   e, deletes divs, look up how to access id within div
-//   } 
-//   console.log(x);
