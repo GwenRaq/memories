@@ -14,10 +14,10 @@ function randomizer() {
 			setImg.style.backgroundImage = "url('../memories/assets/card"+pics[randomNum]+".png')";
       		setImg.id = ""+pics[randomNum]+"";
 		} else {
-			setImg.style.backgroundImage = "url('../memories/assets/card"+pics[randomNum]+".jpeg')";
+			setImg.style.backgroundImage = "url('../memories/assets/card"+pics[randomNum]+".png')";
       		setImg.id = ""+pics[randomNum]+"";
 		}
-		cardPics.splice(randomNum, 1);
+		pics.splice(randomNum, 1);
 	}
 randomizer();
 
