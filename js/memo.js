@@ -1,6 +1,6 @@
 
 var ids = ["a","b","c","d","e","f","g","h"];
-var cardPics = [1,1,2,2,3,3,4,4];
+var pics = [1,1,2,2,3,3,4,4];
 var i;
 
 function randomizer() {
