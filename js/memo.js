@@ -48,4 +48,3 @@ console.log(okay);
       picQueue.splice(0, 2);
     }, 1050);
   }
-}
