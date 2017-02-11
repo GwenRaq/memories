@@ -3,6 +3,7 @@ var pics = [1,1,2,2,3,3,4,4];
 var i;
 var rotationQueue = [];
 var picQueue = [];
+var okay = 0; 
 
 function randomizer() {
 	console.log("k");
@@ -29,4 +30,4 @@ function flip(clicked_id) {
     	picQueue.push(idMatch); 
 //look up how to access id within div
   } 
-console.log(x);
+console.log(okay);
