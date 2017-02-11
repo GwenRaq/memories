@@ -1,4 +1,4 @@
-var ids = ["a","b","c","d","e","f","g","h"];
+var ids = ["ichi","nii","san","shi","go","roku","nana","hachi"];
 var pics = [1,1,2,2,3,3,4,4];
 var i;
 var rotationQueue = [];
