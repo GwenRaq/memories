@@ -31,3 +31,21 @@ function flip(clicked_id) {
 //look up how to access id within div
   } 
 console.log(okay);
+  if (rotationQueue.length == 2) {
+    setTimeout (function() {
+      if (picQueue[0] == picQueue[1]) {
+        document.getElementById(rotationQueue[0]).style.opacity = "0";
+        document.getElementById(rotationQueue[1]).style.opacity = "0";
+        
+      }
+    }, 900);
+    setTimeout(function(){
+      document.getElementById(rotationQueue[0]).style.transform = "rotateY(0deg)";
+      document.getElementById(rotationQueue[1]).style.transform = "rotateY(0deg)";
+    }, 1000);
+    setTimeout(function() {
+      rotationQueue.splice(0, 2);
+      picQueue.splice(0, 2);
+    }, 1050);
+  }
+}
