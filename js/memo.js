@@ -47,4 +47,4 @@ console.log(okay);
       rotationQueue.splice(0, 2);
       picQueue.splice(0, 2);
     }, 1050);
-  }
+
