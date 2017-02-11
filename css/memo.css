@@ -43,7 +43,6 @@ h1{
   background-position: center;
   backface-visibility: hidden;
   background-image: url(../assets/lol.gif);
-  transform: rotateY(0deg);
 }
  img.resize{
     width: 140px;
