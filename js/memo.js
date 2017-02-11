@@ -21,7 +21,7 @@ function randomizer() {
 	}
 randomizer();
 
-function flip(idName) {
+function flipDis(idName) {
 	var j = document.getElementById(idName);
  	j.style.transform = 'rotateY(180deg)';
 	var idMatch = showBack.getElementsByClassName("back")[0].id;
