@@ -27,7 +27,7 @@ function flip(clicked_id) {
 //look up how to access id within div
   } 
 console.log(x);
-
+}
 
 
 // function flip(idName) {
