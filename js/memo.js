@@ -1,8 +1,8 @@
 // var ids = ["ichi","nii","san","shi","go","roku","nana","hachi"];
 // var pics = [1,1,2,2,3,3,4,4];
 // var i;
-// var rotationQueue = [];
-// var picQueue = [];
+// var rotation = [];
+// var waitpic = [];
 // var okay = 0; 
 
 // function randomizer() {
@@ -24,19 +24,19 @@
 //  function flipDis(clicked_id) {
 //   document.getElementById(clicked_id).style.transform = 'rotateY(180deg)';
 //   var idMatch = showBack.getElementsByClassName("back")[0].id;
-//   	if(rotationQueue.length < 2){
-//     	rotationQueue.push(clicked_id); 
-//     	picQueue.push(idMatch); 
+//   	if(rotation.length < 2){
+//     	rotation.push(clicked_id); 
+//     	waitpic.push(idMatch); 
 //   } 
 // console.log(okay);
-//   if (rotationQueue.length == 2) {
+//   if (rotation.length == 2) {
 //     setTimeout(function(){
-//       document.getElementById(rotationQueue[0]).style.transform = "rotateY(0deg)";
-//       document.getElementById(rotationQueue[1]).style.transform = "rotateY(0deg)";
+//       document.getElementById(rotation[0]).style.transform = "rotateY(0deg)";
+//       document.getElementById(rotation[1]).style.transform = "rotateY(0deg)";
 //     }, 1000);
 //     setTimeout(function() {
-//       rotationQueue.splice(0, 2);
-//       picQueue.splice(0, 2);
+//       rotation.splice(0, 2);
+//       waitpic.splice(0, 2);
 //     }, 1050);
 // 	}
 // }
